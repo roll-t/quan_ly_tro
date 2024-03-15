@@ -1,0 +1,141 @@
+.wrap {
+  padding-bottom: 12px;
+  user-select: none;
+  cursor: pointer;
+
+  * a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .contair {
+    // border: 1px solid #ccc;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    .slides {
+      .custom-carousel {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        border-radius: 0.6rem 0.6rem 0 0;
+        overflow: hidden;
+        li {
+          z-index: 1 !important;
+        }
+
+        .sildes_item {
+          height: 274px;
+          display: flex;
+          justify-content: center;
+          img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    .info {
+      padding-top: 10px;
+      color: #000;
+      border-radius: 0 0 0.6rem 0.6rem;
+      .name_star {
+        position: relative;
+        .name {
+          font-size: 16px;
+          font-weight: 600;
+          max-width: calc(100% - 28px);
+        }
+
+        .star {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          font-size: 14px;
+          transform: translateY(-50%);
+          display: flex;
+          align-items: center;
+          
+          svg{
+            margin-right: 2px;
+          }
+        }
+      }
+
+      .owner {
+        .author {
+          color: #5f5b5b;
+          font-size: 14px;
+        }
+      }
+
+      .location {
+        font-size: 14px;
+        color: #000;
+        
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        svg {
+          font-size: 18px;
+          color: #db5353;
+        }
+      }
+
+      .location-filter{
+        width: 280px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        color: #000;
+
+        -webkit-line-clamp: 2;
+        svg {
+          font-size: 18px;
+          color: #db5353;
+        }
+
+        .tooltip-style{
+          background-color: #FF9B9B;
+          color: white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .text-description{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .price {
+        .alone_price {
+          color: #000;
+          font-size: 14px;
+
+          i {
+            text-decoration: underline;
+          }
+
+          .price_hl {
+            color: rgb(219, 83, 83);
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .location-filter{
+    width: 330px !important;
+  }
+}

@@ -1,0 +1,30 @@
+.wrap {
+  flex: 1 0 140px;
+
+  .link {
+    font-size: 18px;
+    border-radius: 8px 0 0 8px;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+
+    svg {
+      width: 24px;
+    }
+  }
+
+  .des {
+    font-size: 14px;
+    color: #aeadad;
+    padding-left: 20px;
+    padding-bottom: 18px;
+  }
+
+  .img-logo{
+  
+    width: 26px;
+  }
+}

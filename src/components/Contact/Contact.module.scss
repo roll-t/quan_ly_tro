@@ -1,0 +1,79 @@
+.wrap{
+    .col-left{
+        border-radius: 0 10px 10px 0;
+        background-color: #fff;
+        
+        .input-field{
+            border-radius: 2px;
+            border: none;
+            border-bottom: 1px solid #dad9d9;
+            font-style: 14px;
+        }
+        .btn-submit{
+            padding: 10px 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border: 0;
+            background-color: rgb(255, 56, 86);
+            letter-spacing: 1.5px;
+            font-size: 15px;
+            transition: all .3s ease;
+            box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+            color: hsl(0, 0%, 100%);
+
+            &:hover{
+                opacity: 0.9;
+                box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+            }
+        }
+    }
+    
+    .col-right {
+        
+        background: linear-gradient(135deg, hsla(0, 100%, 71%, 1) 0%, hsla(49, 70%, 74%, 1) 100%, hsla(347, 75%, 61%, 1) 100%);
+
+        border-radius: 10px 0 0 10px;
+        
+        .circle{
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            margin-right: 8px;
+        }
+    }
+
+    input:disabled, textarea:disabled{
+        background-color: inherit;
+        opacity: 0.7;
+    }
+    
+    @media (min-width: 577px) and (max-width: 768px) {
+        .col-right {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    
+        .col-left {
+            border-radius: 0 0 10px 10px;
+        }
+    }
+
+    // mobile
+    @media (max-width: 576px) {
+        .row-wrap {
+            margin: 8px;
+
+            .col-right{
+                border-radius: 10px 10px 0 0;
+            }
+    
+            .col-left{
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        
+    }
+   
+}   
+

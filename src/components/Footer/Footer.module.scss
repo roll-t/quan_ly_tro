@@ -1,0 +1,21 @@
+
+.wrap{
+  background-color: #ececef;
+
+  .col-right{
+    .link-footer{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        transition: all 0.2s ease-in-out; 
+        &:hover {
+            color: rgb(224, 56, 56);
+            opacity: 0.8;
+        }
+    }
+  }
+
+  @media (max-width: 551px) {
+    
+  }
+}

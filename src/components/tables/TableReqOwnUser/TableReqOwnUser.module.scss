@@ -1,0 +1,148 @@
+.wrap {
+  padding: 10px 0 10px 0;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 10px;
+
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparentize(#ccc, 0.7);
+    
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: transparentize(#ccc, 0.5);
+    // background-color: #e5e4e4;
+    box-shadow: inset 0 0 6px rgba(140, 137, 137, 0.35); 
+  }
+  
+  .donthave {
+    padding: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  table {
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    
+
+
+    thead {
+     
+      position: relative;
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        border: 1px solid #ccc;
+        border-radius: 0.4rem;
+        inset: 0;
+        bottom: calc(100% - 40px);
+        background-color: rgba(93, 112, 126, 0.299);
+        z-index: 3;
+      }
+
+      th {
+        padding-bottom: 40px;
+      }
+
+      tr {
+        th {
+          &:first-child {
+            text-align: center;
+          }
+        }
+
+        
+      }
+    }
+
+    tbody {
+      
+      tr {
+        position: relative;
+        
+        
+       
+        .wait,
+        .ok {
+          display: inline-block;
+          padding: 8px 16px;
+          border-radius: 0.4rem;
+          // background-color: rgb(58, 65, 164);
+          background-color: rgb(120, 118, 4);
+          font-size: 16px;
+        }
+
+        .ok {
+          background-color: rgb(51, 62, 218);
+        }
+
+        td {
+          max-width: 180px;
+          min-width: 160px;
+          height: 100%;
+          padding: 12px 0;
+          background-color: rgba(43, 49, 53, 0.299);   
+          background-clip: content-box;
+          vertical-align: middle;
+        
+
+          &:first-child {
+            max-width: 50px;
+            min-width: 50px;
+            text-align: center;
+            div {
+              border-radius: 8px 0 0 8px;
+            }
+          }
+
+          &:last-child {
+            div {
+              border-radius: 0 8px 8px 0;
+            }
+          }
+
+          div {
+            height: 100%;
+            padding: 10px 8px;
+            max-width: 180px;
+            // background-color: rgba(93, 112, 126, 0.299);
+          }
+
+          .images {
+            max-width: 380px !important;
+
+            .carousel-control {
+              img {
+                width: 100%;
+                height: 120px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .wrap{
+      max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .wrap{
+      max-width: 360px;
+  }
+}
